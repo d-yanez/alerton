@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+    </head>
+    <body>
+    <div class="jumbotron text-center">
+        <h1><span th:text="${appName}">Our App</span></h1>
+        <p>Resize this responsive page to see the effect!</p> 
+    </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor..</p>
+            <p>Ut enim ad..</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 2</h3>
+            <p>Lorem ipsum dolor..</p>
+            <p>Ut enim ad..</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Column 3</h3> 
+            <p>Lorem ipsum dolor..</p>
+            <p>Ut enim ad..</p>
+          </div>
+        </div>
+      </div>
+        
+        <script type="text/javascript" th:src="@{/js/jquery-3.3.1.min.js}"/>
+        <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    </body>
+</html>
